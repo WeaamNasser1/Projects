@@ -815,7 +815,7 @@ nav a:hover::after{
   text-decoration: none;
   font-size: 14px;
 }
-.footer h3{
+.footer h2{
     color:rgba(42, 170, 148, 1);
 }
 .footer1 .div1{
@@ -847,7 +847,7 @@ color:rgba(165, 163, 163, 0.925);
     
 }
 .footer1 .color:hover {
-  color: rgba(6, 42, 174, 0.929);
+  color: rgb(5, 50, 211);
 }
 .footer2{
    display: flex;
