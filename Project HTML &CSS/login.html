@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In - EduZone</title>
+    <link rel="stylesheet" href="style.css"> <!-- نفس CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body >
+    <header>
+
+      <div class="name">
+
+        <img src="images/شعار.svg" alt="EduZone Logo">
+          <h2>Edu<span>Zone</span></h2>
+      </div>
+      <input type="checkbox" id="menu-check">
+      <label for="menu-check" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html#Hero">Home</a></li>
+          <li> <a href="index.html#Subjects">Subjects</a></li>
+          <li> <a href="index.html#Teachers">Teachers</a></li>
+          <li><a href="index.html#About">About</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+        </ul>
+            
+      </nav>
+      <div class="form">
+        <a href="login.html" class="login">Log In</a>
+        <a href="signup.html" class="signup">Sign Up</a>
+      </div>
+
+    </header>
+    <main>
+    <section id="form">
+      <div class="form_card" >
+    <h2>Welcome Back <span>EduZone</span></h2>
+    <p>Log in to continue 🚀</p>
+    <form action="#" method="post">
+        <div class="input_group">
+            <label for="email_login">Email</label>
+            <input type="email" id="email_login" name="email_login" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input_group">
+            <label for="password_login">Password</label>
+            <input type="password" id="password_login" name="password_login" placeholder="Enter your password" pattern=".{6,}" title="Password must be at least 6 characters" required>
+        </div>
+
+        <button type="submit">Log In</button>
+    </form>
+
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer1">
+    <div class="div1">
+      <div class="name">
+        <img src="images/شعار.svg" alt="EduZone Logo">
+        <h3>EduZone</h3>
+      </div>
+      <p>Helping everyone learn smarter, one quiz at a time!</p>
+    </div>
+    <div>
+      <h4>support</h4>
+      <p class="color">eduzone@gmail.com</p>
+      <p class="color">+239098120</p>
+    </div>
+    <div>
+      <h4>Account</h4>
+      <p class="color">My Account</p>
+      <a class="color" href="signup.html">Sign Up / Login</a>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a class="color" href="#About">About</a>
+      <p class="color">Privacy Policy</p>
+    </div>
+  </div>
+  <div class="footer2">
+    <p>&copy; 2026 Smart Learning Platform. All rights reserved.</p>
+    <div>
+      <img src="images/twitter.png" alt="twitter icon">
+      <img src="images/linkedin.png" alt="linkedin icon">
+      <img src="images/github (2).png" alt="github icon">
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
