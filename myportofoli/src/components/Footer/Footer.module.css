@@ -52,7 +52,7 @@
 }
 
 .footerLink:hover {
-  color: #f97316;
+  color: #6635ce;
   padding-left: 4px; /* تحريك بسيط عند الـ hover بيدي شكل ألطف */
 }
 
@@ -74,7 +74,7 @@
 
 .socialBtn:hover {
   color: var(--text-main);
-  border-color: #f97316;
+  border-color: #4f029b;
   transform: translateY(-2px);
 }
 

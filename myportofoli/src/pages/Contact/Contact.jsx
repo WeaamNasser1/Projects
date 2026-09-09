@@ -52,7 +52,7 @@ function Contact() {
                 </div>
                 <div>
                   <span className={contactcss.label}>Email</span>
-                  <h6 className={contactcss.value}>weaamnasser@example.com</h6>
+                  <h6 className={contactcss.value}>weaamnedu@gmail.com</h6>
                 </div>
               </div>
 
