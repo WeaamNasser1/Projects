@@ -1,0 +1,116 @@
+
+.customNav {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.brand {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-color);
+  flex-shrink: 0;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nameText {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.roleText {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+/* الجزء الأوسط: تصميم الـ Pill/Capsule للروابط */
+.navPillContainer {
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  padding: 2px 8px;
+  backdrop-filter: blur(8px);
+}
+
+.pillLink {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.pillLink:hover {
+  color: var(--text-main);
+}
+
+.activePill {
+  background-color: var(--bg-main);
+  color: var(--text-main) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* الجزء اليمين: زرار الـ Theme وزرار Get in touch */
+.themeBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.themeBtn:hover {
+  color: var(--text-main);
+  transform: scale(1.1);
+}
+
+.ctaBtn {
+  background-color: #633cb1; 
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(163, 100, 252, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #270276;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(180, 116, 239, 0.35);
+}

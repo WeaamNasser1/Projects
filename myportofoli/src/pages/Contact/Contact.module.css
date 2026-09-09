@@ -1,0 +1,198 @@
+.contactPage {
+  background-color: var(--bg-main);
+  transition: background-color 0.3s ease;
+}
+
+.subTitle {
+  color: var(--accent-light);
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+}
+
+.mainTitle {
+  color: var(--text-main);
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Info Card */
+.infoCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px 28px;
+  height: 100%;
+}
+
+.infoTitle {
+  color: var(--text-main);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.infoDesc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.iconBox {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(168, 85, 247, 0.12);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-purple);
+  font-size: 1.2rem;
+  margin-right: 16px;
+}
+
+.label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  display: block;
+}
+
+.value {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.socialBtn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.socialBtn:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-light);
+  transform: translateY(-3px);
+}
+
+/* Form Card */
+.formCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.formTitle {
+  color: var(--text-main);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.formLabel {
+  color: var(--text-main);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.formInput {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  color: var(--text-main) !important;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formInput:focus {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+  outline: none;
+}
+
+.formInput::placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, var(--accent-purple), #7e22ce);
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.45);
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(168, 85, 247, 0.08); /* لون خفيف جداً يبرز الأيقونة */
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+/* مقاس الصور بتاعت الايميل والمكان */
+.customIcon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* دوائر التواصل الاجتماعي (GitHub & LinkedIn) */
+.socialBtn {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(168, 85, 247, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialBtn:hover {
+  background-color: rgba(173, 91, 250, 0.735);
+  border-color: var(--accent-purple);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.2);
+}
+
+/* مقاس صور التواصل الاجتماعي */
+.socialIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

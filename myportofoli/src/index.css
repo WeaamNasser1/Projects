@@ -1,0 +1,32 @@
+/* Dark Theme - البنفسجي المودرن */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-main: #0d0b14;       /* خلفية كحلي/بنفسجي داكن جداً */
+  --bg-card: #161224;       /* خلفية الكروت والـ Code Card بنفسجي داكن */
+  --text-main: #f3f0ff;     /* نصوص أبيض مائل للبنفسجي الفاتح */
+  --text-muted: #9e95bd;    /* نصوص فرعية رمادي بنفسجي هادي */
+  --accent-purple: #a855f7; /* بنفسجي زاهي/مضيء للعناوين والـ Highlights */
+  --accent-light: #c084fc;  /* بنفسجي فاتح للروابط والـ Hover States */
+  --border-color: rgba(168, 85, 247, 0.15); /* حدود ناعمة بلون بنفسجي شفاف */
+}
+
+/* Light Theme - متناسق مع نفس الهوية */
+[data-theme='light'] {
+  --bg-main: #faf5ff;       /* خلفية بنفسجي فاتح جداً هادية */
+  --bg-card: #ffffff;
+  --text-main: #1e112a;
+  --text-muted: #6b587b;
+  --accent-purple: #7e22ce; /* بنفسجي غامق احترافي */
+  --accent-light: #9333ea;
+  --border-color: rgba(126, 34, 206, 0.12);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
