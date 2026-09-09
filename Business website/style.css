@@ -1,0 +1,404 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* -------------navbar section-------------- */
+nav{
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0%;
+    z-index: 5;
+}
+nav img{
+    width: 40px;
+    
+}
+#nav_links{
+    padding: 10px;
+}
+.nav_link{
+    color: rgb(48, 100, 5);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+
+}
+.nav_link:hover{
+    color: rgb(168, 207, 52);
+}
+/* -------------header section-------------- */
+header{
+    position: relative;
+}
+header button{
+    position: absolute;
+    background-color: rgb(168, 207, 52);
+    padding: 15px 25px;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.arrow_left{
+    left: 20px;
+    top: 45%;
+}
+.arrow_right{
+    right: 20px;
+    top: 45%;
+}
+.child_header{
+    padding: 110px 120px;
+    padding-right: 400px;
+    font-size: 30px;
+    color: white;
+}
+#child_header1{
+    background:linear-gradient(rgba(200, 160, 60, 0.402), rgba(200, 160, 60, 0.676)),url('images/i02.jpeg');
+    background-size:cover;
+    height: 500px;
+}
+#child_header2{
+    background:linear-gradient(rgba(200, 160, 60,  0.402), rgba(200, 160, 60, 0.676)),url('images/i01.jpeg');
+    background-size:cover;
+    height: 530px;
+    display: none;
+}
+#child_header3{
+    background:linear-gradient(rgba(200, 160, 60,  0.402), rgba(200, 160, 60, 0.676)),url('images/i03.jpg');
+    background-size:cover;
+    height: 530px;
+    display: none;
+}
+header p{
+    margin: 15px 5px;
+    font-size: 28px;
+}
+.header_hover{
+    background-color: rgb(149, 184, 44);
+    width: 165px;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 60px;
+    border: none;
+}
+.header_hover:hover{
+    background-color:rgba(246, 233, 210, 0);
+    border: 3px solid  rgb(149, 184, 44);
+    color:  rgb(154, 188, 53);
+}
+/* -------------section 1-------------- */
+#Insurance{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px;
+    background-color: rgba(248, 243, 237, 0.89);
+    position: relative;
+    color: rgb(102, 104, 104);
+}
+.child_sec1 img {
+    width: 30px;
+    margin-right: 20px;
+    filter: invert(78%) sepia(45%) saturate(700%) hue-rotate(35deg) brightness(90%); 
+    
+}
+.Insurance_content>p{
+    font-size: 15px;
+    line-height: 25px;
+}
+#Insurance h1{
+    color: rgb(250, 161, 88);
+    font-size:40px;
+}
+.img_sec1{
+    padding-top: 70px;
+    margin-left: 50px;
+}
+.child_sec1{
+    margin: 20px 0px;
+}
+.arrow_up{
+    width: 20px;
+    height: 20px;
+    border-top: 6px solid rgb(154, 188, 53, 0.888);
+    border-left: 6px solid rgba(154, 188, 53, 0.888);
+    transform: rotate(45deg);
+    background:transparent;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    position: fixed;
+}
+/* -------------section 2-------------- */
+#customer{
+    display: flex;
+    background-color:#486e32ea;
+    height: 350px;
+    line-height: 30px;
+}
+.child_sec2{
+    padding: 60px;
+    color: rgb(252, 251, 248);
+}
+.child_sec2>h2{
+    margin: 0px 0px 20px;
+}
+#Customer_care:hover{
+    background-image:linear-gradient(rgba(178, 226, 64, 0.402), rgba(165, 222, 59, 0.39)),url('images/i06.jpg');
+    background-size: cover;
+}
+#Claims_info:hover{
+    background-image:linear-gradient(rgba(178, 226, 64, 0.402), rgba(165, 222, 59, 0.39)),url('images/i07.jpg');
+    background-size: cover;
+}
+#Request:hover{
+    background-image:linear-gradient(rgba(178, 226, 64, 0.402), rgba(165, 222, 59, 0.39)),url('images/i05.jpg');
+    background-size: cover;
+}
+.child_sec2 img {
+    width: 40px;
+    margin-right: 20px;
+}
+/* -------------Section3-------------- */
+#about{
+    display: flex;
+    padding: 70px 50px;
+    background-color: rgb(250, 250, 241);
+}
+#about_content{
+    width: 40%;
+    line-height: 30px;
+    color:rgb(67, 67, 67) ;
+}
+#about_content h1{
+    color: rgb(250, 161, 88);
+    font-size:40px;
+    margin-bottom: 20px;
+}
+#about_content span{
+    margin: 20px;
+}
+#about_img{
+    width: 55%;
+}
+#about img{
+    width: 100%;
+    height: 550px;
+    margin: 0 0 0 50px;
+}
+.square{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(154, 188, 53, 0.888);
+    display: inline-block;
+}
+#statistics{
+    display: flex;
+}
+.statistic{
+    display: flex;
+    flex-direction: column;
+}
+.statistic h1{
+    color: rgb(253, 154, 73);
+}
+.statistic p{
+    color:rgba(116, 145, 31, 0.888);
+}
+.statistic>div{
+    padding: 10px 20px ;
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+#statistic2>div{
+    border-left: 1px solid gray;
+}
+/* -------------Section4-------------- */
+.h1_center{
+    text-align: center;
+    color: rgb(250, 161, 88);
+    margin: 50px 0px;
+    font-size: 60px;
+}
+#team{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    color: rgb(71, 72, 72);
+    margin: 0 0 50px 0;
+}
+.person{
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+}
+.person span{
+    color:rgba(154, 188, 53, 0.888);
+    font-weight: bold;
+}
+.line{
+    width: 25px;
+    height: 3px;
+    background-color:rgba(154, 188, 53, 0.888) ;
+    display: inline-block;
+    margin: 0 10px 3px 0px;
+}
+.person>img{
+    width: 80px;
+    border-radius: 50%;
+    margin:  0px 25px 70px 50px;
+}
+/* -------------Section5-------------- */
+#sec_news{
+    background-image: linear-gradient(to right,white ,rgba(251, 246, 242, 0.529) ,rgba(247, 238, 226, 0.752));
+    padding: 50px 0;
+
+}
+#News{
+    display: flex;
+    padding: 0 100px 50px;
+    gap: 30px;
+}
+#News img{
+    width: 100%;
+}
+.post_info{
+    color: #777;
+
+}
+.after_admin {
+  width: 1px;              
+  height: 12px;              
+  background-color: #777;  
+  display: inline-block;
+  margin: 0 10px;
+}
+.post_info:hover .after_admin {
+  width: 12px;              
+  height: 1px;
+  margin-bottom: 4px;
+
+}
+#News p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929; 
+}
+#News a{
+    color:rgba(154, 188, 53, 0.888) ;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(154, 188, 53, 0.888);
+}
+/* -------------Section6-------------- */
+#Testimonials{
+    display: flex;
+    margin: 0 0 50px 0;
+}
+.Testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.child_Testimonial{
+    text-align: center;
+    padding: 0px 50px;
+    color: rgb(71, 72, 72);
+}
+.Testimonial hr{
+    width: 50px;
+    height: 3px;
+    background-color:rgba(154, 188, 53, 0.888) ;
+    margin: 20px 0px 20px 140px;
+}
+.Testimonial h3{
+    color:rgba(154, 188, 53, 0.888);
+    font-weight: bold;
+}
+
+.Testimonial>img{
+    width: 100px;
+    border-radius: 50%;
+    margin:  0px 25px 50px 50px;
+}
+
+/* -------------Section7-------------- */
+#contact{
+    display: flex;
+    padding: 70px 100px;
+    background-image: linear-gradient(to left,white ,rgba(251, 246, 242, 0.256) ,rgba(247, 238, 226, 0.752));
+}
+.content-form{
+    width: 50%;
+    line-height: 30px;
+    color:rgb(67, 67, 67) ;
+    margin: -20px 0 0 50px;
+}
+.content-form>h1{
+    color: rgb(250, 161, 88);
+    font-size:40px;
+    margin-bottom: 30px;
+}
+.content-img>img{
+    width: 100%;
+    height: 400px;
+    margin: 0 50px 0 0px;
+}
+.input_contact{
+    width: 100%;
+}
+.input_contact>input,.input_contact>textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+} 
+#input_name>input{
+    width: 45.7%;
+}
+.content-form button{
+   background-color:rgba(154, 188, 53, 0.888); 
+   color: rgb(248, 250, 242);
+   padding:  10px 20px;
+   margin: 10px;
+   border:none;
+}
+.content-form button:hover{
+   background-color: rgba(18, 18, 18, 0); 
+   color: rgba(154, 188, 53, 0.888);
+   border: 2px solid rgba(154, 188, 53, 0.888) ;
+}
+.content-form>p{
+    color: azure;
+    background-color: rgba(223, 216, 18, 0.843);
+    width: 79%;
+    padding: 8px;
+    margin: -20px 10px 0;
+   display: none;
+}
+.content-form button:target .content-form>p{
+    display: block;
+}
+/* -------------Footer-------------- */
+footer{
+    background-color:#486e32ea;
+    padding: 35px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+
+
