@@ -6,7 +6,7 @@ function Home() {
   return (
    <>
     <section
-      className={`min-vh-100 d-flex align-items-center ${homecss.heroSection}`}
+      className={`d-flex align-items-center ${homecss.heroSection}`}
     >
       <div className="container py-5">
         <div className="row align-items-center gy-5">
