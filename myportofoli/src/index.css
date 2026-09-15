@@ -24,6 +24,10 @@
   --accent-light: #9333ea;
   --border-color: rgba(126, 34, 206, 0.12);
 }
+::selection{
+  background-color:var(--accent-light) ;
+  color: var(--text-main);
+}
 
 body {
   background-color: var(--bg-main);

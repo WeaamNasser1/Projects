@@ -33,7 +33,7 @@
 
 .nameText {
   color: var(--text-main);
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.3px;
   transition: color 0.3s ease;
 }
@@ -113,4 +113,14 @@
   background-color: #270276;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(180, 116, 239, 0.35);
+}
+/* زرار اللغة الجديد */
+.tranBtn{
+  background-color: transparent;
+  color: var(--text-m);
+}
+.tranBtn:hover{
+  background-color: var(--border-color);
+  border-color: var(--accent-purple);
+  
 }

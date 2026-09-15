@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import contactcss from './Contact.module.css';
 
 import emailIcon from '../../assets/images/icons8-email-open-50.png';
@@ -8,6 +9,9 @@ import githubIcon from '../../assets/images/icons8-github-50.png';
 import linkedinIcon from '../../assets/images/icons8-linkedin-50.png';
 
 function Contact() {
+  const form = useRef(); // مرجع الفورم عشان EmailJS يقرأ البيانات مباشرة
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
   const handleChange = (e) => {
@@ -16,8 +20,23 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for reaching out! Your message has been sent.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    // استبدلي القيم دي بالـ IDs الخاصة بحسابك في EmailJS
+    const SERVICE_ID = 'service_req1824';
+    const TEMPLATE_ID = 'template_vme446s';
+    const PUBLIC_KEY = 'qZ941PgxYOlBtYjXo';
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+          setSuccess(true);
+          setError(false);
+          setFormData({ name: '', email: '', subject: '', message: '' }); // تفريغ الفورم بعد الإرسال
+      }, (error) => {
+          console.log(error.text);
+          setError(true);
+          setSuccess(false);
+      });
   };
 
   return (
@@ -37,7 +56,7 @@ function Contact() {
 
         <div className="row g-4 justify-content-center">
           
-          {/* الشمال: معلومات التواصل المباشرة (مع الأيقونات الجديدة) */}
+          {/* الشمال: معلومات التواصل المباشرة */}
           <div className="col-lg-5">
             <div className={contactcss.infoCard}>
               <h3 className={contactcss.infoTitle}>Contact Information</h3>
@@ -52,7 +71,7 @@ function Contact() {
                 </div>
                 <div>
                   <span className={contactcss.label}>Email</span>
-                  <h6 className={contactcss.value}>weaamnedu@gmail.com</h6>
+                  <h6 className={contactcss.value}>weaamnres@gmail.com</h6>
                 </div>
               </div>
 
@@ -85,7 +104,7 @@ function Contact() {
                   <a href="https://github.com/WeaamNasser" target="_blank" rel="noopener noreferrer" className={contactcss.socialBtn}>
                     <img src={githubIcon} alt="GitHub" className={contactcss.socialIcon} />
                   </a>
-                  <a href="https://www.linkedin.com/in/weaam-behairy-529586371/"target="_blank" rel="noopener noreferrer" className={contactcss.socialBtn}>
+                  <a href="https://www.linkedin.com/in/weaam-behairy-529586371/" target="_blank" rel="noopener noreferrer" className={contactcss.socialBtn}>
                     <img src={linkedinIcon} alt="LinkedIn" className={contactcss.socialIcon} />
                   </a>
                 </div>
@@ -93,12 +112,26 @@ function Contact() {
             </div>
           </div>
 
-          {/* اليمين: نموذج إرسال الرسالة (زى ما هو بدون تغيير) */}
+          {/* اليمين: نموذج إرسال الرسالة */}
           <div className="col-lg-7">
             <div className={contactcss.formCard}>
               <h3 className={contactcss.formTitle}>Send a Message</h3>
               
-              <form onSubmit={handleSubmit}>
+              {/* رسالة نجاح الإرسال */}
+              {success && (
+                <div className="alert alert-success mb-3" role="alert">
+                  Thank you for reaching out! Your message has been sent successfully.
+                </div>
+              )}
+
+              {/* رسالة خطأ في الإرسال */}
+              {error && (
+                <div className="alert alert-danger mb-3" role="alert">
+                  Oops! Something went wrong, please try again later.
+                </div>
+              )}
+
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <label className={contactcss.formLabel}>Your Name</label>
