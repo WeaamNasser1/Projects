@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.089);
+  backdrop-filter: none !important;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.navlogo {
+  max-width: 110px;
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link:hover {
+  color: #268dfcdd;
+}
+.price-tag,
+nav span {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.bag {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+.bag-top {
+  width: 20px;
+  text-align: center;
+  margin: 0 0 20px -5px;
+  background-color: white;
+  border-radius: 50%;
+  color: #333;
+}
+
+.menu-toggle {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed white;
+}
+
+.menu-icon {
+  filter: brightness(0) invert(1);
+}
+
+.offcanvas-body li {
+  padding: 30px;
+  border-bottom: 1px solid rgb(206, 204, 200);
+}
+.offcanvas-body a {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: black;
+}
+.menu-top {
+  margin-bottom: 50px;
+}
+.menu-bottum a {
+  font-size: 10px;
+}
+.offcanvas-body a:hover {
+  color: #268dfcdd;
+}
+/*********    Header      ********* */
+header {
+  position: relative;
+  padding: 150px 0 100px;
+  background-image:
+    linear-gradient(rgba(18, 27, 54, 0.45), rgba(22, 33, 65, 0.45)),
+    url("./images/imgi_116_home-new-bg-free-img.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.content > h1 {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 90px;
+}
+.content > h2 {
+  font-size:25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.btn-1 {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.btn-1:hover {
+  background-color: black;
+  color: white;
+}
+.btn-2 {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.btn-2:hover {
+  color: black;
+  background-color: white;
+}
+
+.customize {
+  color: black;
+  background-color: white;
+  position: absolute;
+  top: 210px;
+  right: 0;
+  z-index: 5;
+  padding: 10px 15px;
+  position: fixed;
+}
+.customize img {
+  filter: brightness(0);
+}
+.customize:hover p {
+  color: rgb(6, 102, 238);
+}
+.customize:hover img {
+  filter: brightness(1);
+}
+.shop {
+  position: absolute;
+  z-index: 6;
+  top: 525px;
+  right: 20px;
+  position: fixed;
+}
+.shop > div {
+  position: relative;
+}
+.shop p {
+  position: absolute;
+  width: 22px;
+  background-color: rgba(7, 190, 7, 0.853);
+  padding: 0px 7px;
+  border-radius: 50%;
+  right: 40px;
+  top: -7px;
+}
+.img {
+  background-color: rgba(55, 126, 249, 0.852);
+  border-radius: 50%;
+  padding: 10px;
+}
+.img > img {
+  filter: brightness(0) invert(1);
+}
+/* ************ Section 1************* */
+.logo-item {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-section {
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.logos-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  animation: scrollLogos 15s linear infinite;
+}
+
+.logos-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.div-p {
+  padding: 5% 4% 7%;
+}
+.div-ch {
+  min-height: 300px;
+  padding: 160px 4% 20px !important;
+  color: white;
+}
+.div-ch > h2 {
+  font-size: 23px;
+  font-weight: bold;
+}
+.div-ch > p {
+  font-size: 14px;
+}
+.div-1 {
+  background-image:
+    linear-gradient(rgba(35, 18, 19, 0.54), rgba(30, 19, 21, 0.469)),
+    url("./images/imgi_117_women-fashion-free-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.div-2 {
+  background-image:
+    linear-gradient(rgba(7, 47, 47, 0.55), rgba(42, 60, 62, 0.55)),
+    url("./images/imgi_118_men-fashion-free-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.div-3 {
+  background-image:
+    linear-gradient(rgba(46, 30, 31, 0.657), rgba(62, 42, 46, 0.634)),
+    url("./images/imgi_119_footwear-free-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ********************* Section 2*********************** */
+.product-cards {
+  background-color: rgb(248, 245, 245);
+  padding: 100px 0;
+}
+.product-card {
+  padding: 10px;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-price {
+  color: #777;
+  font-size: 13px;
+}
+
+.color-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.color-dot:hover,
+.color-dot:active {
+  outline: 1px solid black;
+}
+
+.col-custom {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .col-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+/* ******************** Section 3*********************** */
+.limit {
+  color: white;
+  background-image:
+    linear-gradient(rgba(3, 118, 212, 0.155), rgba(3, 133, 184, 0.062)),
+    url(./images/imgi_121_banner-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  height: 400px;
+}
+.limit h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.limit h2 {
+  font-size: 23px;
+  font-weight: bold;
+}
+.limit p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* ********************* Section 4*********************** */
+.offers {
+  background-color: #eff5f9d3;
+  padding: 100px 50px;
+}
+.offers > div {
+  margin: 20px 0;
+}
+.offers img {
+  width: 100px;
+}
+.offers h5 {
+  font-weight: bold;
+}
+.offers p {
+  opacity: 0.9;
+  text-align: center;
+}
+/* ********************  Footer   ******************* */
+.foot {
+  line-height: 30px;
+  padding: 50px 0 0;
+}
+.foot > h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.foot li {
+  font-size: 14px;
+}
+.foot2 {
+  padding: 20px;
+  border-top: 1px solid rgb(224, 222, 222);
+}
+
+/* **********************  Alll **************** */
+@media (min-width: 992px) {
+  .limit,
+  header {
+    background-attachment: fixed;
+  }
+}
