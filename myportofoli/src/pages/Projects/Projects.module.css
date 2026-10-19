@@ -20,6 +20,22 @@
 }
 
 /* Project Card */
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  /* شيلي height: 200px */
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;          /* الطول يتظبط حسب الصورة */
+  display: block;
+}
+.projectCard:hover .projectImage {
+  transform: scale(1.05); /* زووم خفيف لما تعدي بالماوس */
+}
 .projectCard {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
