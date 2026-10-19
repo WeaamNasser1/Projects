@@ -1,8 +1,7 @@
 import React from 'react';
 import projectscss from './Projects.module.css';
 
-// استدعاء الأيقونات لو حابة تستخدميها من Icons8
-// import githubIcon from '../../assets/images/icons8-github-50.png';
+
 
 const projectsData = [
   {
@@ -11,18 +10,28 @@ const projectsData = [
     category: 'Front-End Project',
     description: 'A clean, fully responsive educational platform interface designed to display courses, educational tracks, and learning resources seamlessly across all screen sizes.',
     tech: ['HTML5', 'CSS3', 'Responsive Design'],
-    github: 'https://github.com/WeaamNasser1/Projects/tree/main/Project%20HTML%20%26CSS', // حطي رابط الريبو
-    demo: 'https://eduzone-gules.vercel.app/', // حطي لينك Vercel هنا
+    github: 'https://github.com/WeaamNasser1/Projects/tree/main/Project%20HTML%20%26CSS', 
+    demo: 'https://eduzone-gules.vercel.app/', 
     featured: true
   },
   {
     id: 2,
-    title: 'Business Website',
+    title: 'Home Page of Business Website(Landing Page)',
     category: 'Front-End Project',
     description: 'A modern corporate & business landing page built with semantic HTML and custom CSS, focusing on professional branding, service highlights, and structured navigation.',
-    tech: ['HTML5', 'CSS3', 'Flexbox / Grid'],
-    github: 'https://github.com/WeaamNasser1/Projects/tree/main/Business%20website', // حطي رابط الريبو
-    demo: 'https://business-website-xi-five.vercel.app/', // حطي لينك Vercel هنا
+    tech: ['HTML5', 'CSS3', 'Flexbox / Grid',"Bootstrap"],
+    github: 'https://github.com/WeaamNasser1/Projects/tree/main/Business%20website', 
+    demo: 'https://business-website-xi-five.vercel.app/', 
+    featured: true
+  },
+  {
+    id: 3,
+    title: 'Home Page of Brand-Store Website(Landing Page)',
+    category: 'Front-End Project',
+    description: 'A modern corporate & business landing page built with semantic HTML and custom CSS, focusing on professional branding, service highlights, and structured navigation.',
+    tech: ['HTML5', 'CSS3', 'Flexbox / Grid',"Bootstrap"],
+    github: 'https://github.com/WeaamNasser1/Projects/tree/main/Brand%20Store', 
+    demo: 'https://brand-store-alpha.vercel.app/', 
     featured: true
   }
 ];

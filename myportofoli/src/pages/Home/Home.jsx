@@ -125,7 +125,7 @@ function Home() {
           <div className="col-6">
             <div className={homecss.statCard}>
               <h3 className={homecss.statNumber}>ASU</h3>
-              <p className={homecss.statLabel}>Faculty of Computers & Information</p>
+              <p className={homecss.statLabel}>Faculty of Computers & Information Science</p>
             </div>
           </div>
           <div className="col-6">
